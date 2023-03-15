@@ -12,13 +12,35 @@ import { Text } from '@chakra-ui/react'
 import { MdOutlinePostAdd } from "react-icons/md"
 export function AttributePanel() {
     const columns = [
+        { key: 'compiled', name: 'Y/N'},
         { key: 'date_b', name: 'date_b' },
         { key: 'date_e', name: 'date_e' },
-        { key: 'name', name: 'Назва' },
+        { key: 'name', name: 'Назва'},
     ];
 
     const rows = [
-        { date_b: '22.02.2021', date_e: '22.02.2021', name: 'Example Example Example Example Example Example Example Example Example ' },
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: 'Example Example Example Example Example Example Example Example Example ' , compiled: 'Y'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: 'Example Example Example Example Example Example Example Example Example ' , compiled: 'Y'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'Y'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'Y'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'Y'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'Y'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'Y'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'Y'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'Y'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'Y'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'Y'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'N'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'Y'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'N'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'Y'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'Y'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'Y'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'Y'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'Y'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'Y'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'N'},
+        { date_b: '22.02.2021', date_e: '22.02.2021', name: ' Example ' , compiled: 'Y'},
     ];
 
     return (
@@ -50,7 +72,7 @@ export function AttributePanel() {
                     </Button>
                 </CardFooter>
             </Card>
-            <DataGrid style={{ flex: 1 }} columns={columns} rows={rows} />
+            <DataGrid rowHeight={20} style={{ flex: 1 }} columns={columns} rows={rows} />
         </Flex>
     )
 }
